@@ -1,6 +1,6 @@
-const fees_controller = require("../model/fees_model");
+const fees_model = require("../model/fees_model");
 
-exports.fees_controller = async (request, response) => {
+exports.new_fees = async (request, response) => {
     const { sid, fees_purpose, fees_paid, bill_no } = request.body;
 
     try {

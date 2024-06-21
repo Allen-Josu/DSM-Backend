@@ -6,11 +6,12 @@ const fees_controller = require("../controller/fees_controller");
 const router = express.Router();
 
 router.post("/students", students_controller.new_students);
+router.get("/students", students_controller.get_one_student);
 
-router.post("/training", training_controller.training_controller);
+router.post("/training", training_controller.new_training);
 
-router.post("/fees", fees_controller.fees_controller);
+router.post("/fees", fees_controller.new_fees);
 
-router.get("/students", students_controller.get_one_students);
+
 
 module.exports = router;

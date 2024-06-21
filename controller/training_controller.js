@@ -1,6 +1,6 @@
-const training_controller = require("../model/training_model");
+const training_model = require("../model/training_model");
 
-exports.training_controller = async (request, response) => {
+exports.new_training = async (request, response) => {
     const { training_ID, trainer, vehicle, date, students } = request.body;
 
     try {

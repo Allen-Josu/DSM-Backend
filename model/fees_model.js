@@ -11,7 +11,7 @@ const fees_schema = new mongoose.Schema({
     },
     fees_paid: {
         required: true,
-        type: String,
+        type: Number,
     },
     bill_no: {
         type: String,
